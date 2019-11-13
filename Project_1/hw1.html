@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW1</title>
+    <style>
+        h1{
+          background-color: #2b2e4a;
+          text-align: center;
+          padding: 30px;
+          color: White;
+        }
+
+        ul {
+          font-weight: bold;
+          text-align: center;
+          list-style-type: none;
+          margin: 0;
+          padding: 5px;
+
+          }
+        li{
+          display: inline;
+          padding: 50px;
+          font-size: 20px;
+        }
+        g.Xval{
+          fill: #e84545;
+
+        }
+        g.Yval{
+          fill: #2b2e4a;
+        }
+        rect:hover{
+          fill: #C0C0C0;
+        }
+
+        path.Lval{
+          stroke: #2b2e4a;
+          fill: white;
+        }
+        line{
+          stroke: #e84545;
+        }
+        path.AreaX{
+          fill:#2b2e4a;
+          stroke:#2b2e4a;
+        }
+        path.AreaY{
+          fill:#e84545;
+          stroke:#e84545;
+        }
+        rect.box{
+          fill: white;
+          stroke: #2b2e4a;
+        }
+        circle{
+          fill: #2b2e4a;
+        }
+        circle:hover{
+          fill: #C0C0C0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+  <h1>CS-5630 / CS-6630 Homework 1</h1>
+<ul>
+    <li>Dobbali Kiranmayee</li>
+    <li>u1265299@utah.edu</li>
+    <li>u1265299</li>
+  </ul>
+  <hr>
+  <h2>Bar Chart</h2>
+
+
+<svg width='1400' height='400'>
+
+<g class="Xval" transform="translate(0,10)">
+    <rect width="320" height="25" x="700" y="0" ></rect>
+    <rect width="280" height="25" x="700" y="28"></rect>
+    <rect width="304" height="25" x="700" y="56"></rect>
+    <rect width="352" height="25" x="700" y="84"></rect>
+    <rect width="332" height="25" x="700" y="112"></rect>
+    <rect width="400" height="25" x="700" y="140"></rect>
+    <rect width="288" height="25" x="700" y="168"></rect>
+    <rect width="172" height="25" x="700" y="196"></rect>
+    <rect width="440" height="25" x="700" y="224"></rect>
+    <rect width="192" height="25" x="700" y="252"></rect>
+    <rect width="228" height="25" x="700" y="280"></rect>
+</g>
+
+<g class="Yval" transform="translate(0,10)">
+    <rect width="400" height="25"  x="295" y="0"></rect>
+    <rect width="320" height="25"  x="375" y="28"></rect>
+    <rect width="520" height="25"  x="175" y="56"></rect>
+    <rect width="360" height="25"  x="335" y="84"></rect>
+    <rect width="440" height="25"  x="255" y="112"></rect>
+    <rect width="560" height="25"  x="135" y="140"></rect>
+    <rect width="240" height="25"  x="455" y="168"></rect>
+    <rect width="160" height="25"  x="535" y="196"></rect>
+    <rect width="480" height="25"  x="215" y="224"></rect>
+    <rect width="280" height="25"  x="415" y="252"></rect>
+    <rect width="200" height="25"  x="495" y="280"></rect>
+</g>
+
+</svg>
+
+<h2>Line Chart</h2>
+<svg width="1400" height="500">
+  <g transform="translate(0, 500) scale(1, -1)">
+    <path class="Lval"
+     d="
+    M 40 300
+    L 80 240
+    L 120 390
+    L 160 270
+    L 200 330
+    L 240 420
+    L 280 180
+    L 320 120
+    L 360 360
+    L 400 210
+    L 440 150
+    "/>
+
+    <line x1="500" y1="320" x2="540" y2="280"/>
+    <line x1="540" y1="280"  x2="580" y2="304"/>
+    <line x1="580" y1="304"  x2="620" y2="352"/>
+    <line x1="620" y1="352"  x2="680" y2="332"/>
+    <line x1="680" y1="332"  x2="720" y2="400"/>
+    <line x1="720" y1="400"  x2="780" y2="288"/>
+    <line x1="780" y1="288"  x2="820" y2="172"/>
+    <line x1="820" y1="172"  x2="860" y2="432"/>
+    <line x1="860" y1="432"  x2="900" y2="192"/>
+    <line x1="900" y1="192"  x2="940" y2="228"/>
+
+</g>
+
+</svg>
+
+<h2>Area Chart</h2>
+<svg width="1400" height="500">
+ <g transform="translate(780, 500) scale(1, -1) rotate(90)">
+  <path  class="AreaX"
+   d="
+  M 40 300
+  L 80 240
+  L 120 390
+  L 160 270
+  L 200 330
+  L 240 420
+  L 280 180
+  L 320 120
+  L 360 360
+  L 400 210
+  L 440 150
+  L 440 50
+  L 40 50
+  z
+  "/>
+
+</g>
+
+ <g transform="translate(455, 380) scale(1, -1)  rotate(-90 ,500,320)">
+   <path class="AreaY"
+       d="
+       M 500 320
+       L 540 280
+       L 580 304
+       L 620 352
+       L 680 332
+       L 720 400
+       L 780 288
+       L 820 172
+       L 860 432
+       L 900 192
+       L 900 100
+       L 500 100
+       z
+ "/>
+</g>
+
+</svg>
+
+<h2>Scatterplot</h2>
+<svg width='1400' height='600'>
+<rect class="box" width="450" height="400" x="500" y="100"></rect>
+
+<g transform="translate(450, 500) scale(3, -3)">
+
+  <line x1="20" y1="40" x2="160" y2="110"/>
+  <circle cx="100" cy="80" r="3"><title>10.0,8.04</title></circle>
+  <circle cx="80" cy="70" r="3"><title>8.0,6.95</title></circle>
+  <circle cx="130" cy="76" r="3"><title>13.0,7.58</title></circle>
+  <circle cx="90" cy="88" r="3"><title>9.0,8.81</title></circle>
+  <circle cx="110" cy="83" r="3"><title>11.0,8.33</title></circle>
+  <circle cx="140" cy="100" r="3"><title>14.0,9.96</title></circle>
+  <circle cx="60" cy="72" r="3"><title>6.0,7.24</title></circle>
+  <circle cx="40" cy="43" r="3"><title>4.0,4.26</title></circle>
+  <circle cx="120" cy="108" r="3"><title>12.0,10.84</title></circle>
+  <circle cx="70" cy="48" r="3"><title>7.0,4.82</title></circle>
+  <circle cx="50" cy="57" r="3"><title>5.0,5.68</title></circle>
+</g>
+
+
+</svg>
+
+
+</body>
+</html>
